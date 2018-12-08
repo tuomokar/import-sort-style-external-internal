@@ -1,0 +1,11 @@
+{
+  "name": "import-sort-style-tuomokar",
+  "version": "1.0.0",
+  "description": "An import-sort style that groups and sorts by whether the module comes from node modules or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tuomo Oila",
+  "license": "UNLICENSE"
+}
