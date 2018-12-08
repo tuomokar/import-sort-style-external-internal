@@ -1,5 +1,5 @@
 
-exports.default = function(styleApi) {
+export default (styleApi) => {
 
     const {
         and,
