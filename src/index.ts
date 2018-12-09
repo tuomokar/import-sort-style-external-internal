@@ -1,5 +1,6 @@
+import {IStyleAPI, IStyleItem} from "import-sort-style"
 
-export default (styleApi) => {
+export default (styleApi: IStyleAPI): Array<IStyleItem> => {
 
     const {
         and,
@@ -19,8 +20,18 @@ export default (styleApi) => {
         startsWithLowerCase,
         startsWithUpperCase,
         unicode,
-    } = styleApi;
+    } = styleApi
 
     return [
+        // import {Foo, bar, …} from "./baz"
+        // import {foo, bar, …} from "./baz"
+        {
+            match: and(
+              hasOnlyNamedMembers,
+              isRelativeModule
+            ),
+            sort: member(unicode),
+            sortNamedMembers: name(unicode),
+        }
     ];
 }
