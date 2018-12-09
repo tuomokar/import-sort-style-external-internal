@@ -10,6 +10,8 @@
   "author": "Tuomo Oila",
   "license": "UNLICENSE",
   "devDependencies": {
+    "import-sort-parser": "^5.0.0",
+    "import-sort-style": "^5.0.0",
     "typescript": "^3.2.2"
   }
 }
